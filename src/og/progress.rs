@@ -14,7 +14,7 @@ use send_wrapper::SendWrapper;
 use std::thread;
 use std::time::Instant;
 
-use crate::{infinite::FPS, utils, AsyncView};
+use super::{infinite::FPS, utils, AsyncView};
 
 /// An enum to be returned by the `poll_ready` callback, with additional information about the creation progress.
 pub enum AsyncProgressState<V: View> {

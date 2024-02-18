@@ -47,7 +47,7 @@ Simply add to your `Cargo.toml`
 
 ```toml
 [dependencies]
-cursive-async-view = "^0"
+cursive-async-view = { git = "https://github.com/CoolSlimbo/cursive-async-view.git" }
 ```
 
 ### Asynchronous view loading without progress information
@@ -166,7 +166,7 @@ to execute all available tests.
 
 > [:octocat: `@fin-ger`](https://github.com/fin-ger)  
 > [:elephant: `@fin_ger@weirder.earth`](https://weirder.earth/@fin_ger)  
-> [:bird: `@fin_ger_github`](https://twitter.com/fin_ger_github)  
+> [:bird: `@fin_ger_github`](https://twitter.com/fin_ger_github)
 
 <br>
 
@@ -174,7 +174,7 @@ to execute all available tests.
 
 > [:octocat: `@jwuensche`](https://github.com/jwuensche)  
 > [:elephant: `@fredowald@mastodon.social`](https://mastodon.social/web/accounts/843376)  
-> [:bird: `@Fredowald`](https://twitter.com/fredowald)  
+> [:bird: `@Fredowald`](https://twitter.com/fredowald)
 
 ## Show your support
 

@@ -15,7 +15,7 @@ use log::warn;
 use num::clamp;
 use send_wrapper::SendWrapper;
 
-use crate::utils;
+use super::utils;
 
 /// This struct represents the content of a single loading or error animation frame,
 /// produced by a animation function of the `AsyncView`. Read the documentation

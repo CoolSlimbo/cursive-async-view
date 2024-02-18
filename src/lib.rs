@@ -88,14 +88,19 @@
 //! // siv.run();
 //! ```
 
-mod infinite;
-mod progress;
-mod utils;
+#[cfg(feature = "futures")]
+mod futures;
+#[cfg(feature = "og")]
+mod og;
 
-pub use infinite::{default_animation, default_error, AnimationFrame, AsyncState, AsyncView};
-pub use progress::{
-    default_progress, default_progress_error, AnimationProgressFrame, AsyncProgressState,
-    AsyncProgressView,
-};
+#[cfg(feature = "futures")]
+extern crate crossbeam;
+#[cfg(feature = "futures")]
+extern crate cursive_core;
+#[cfg(feature = "futures")]
+extern crate tokio;
+#[cfg(feature = "futures")]
+pub use futures::*;
 
-doc_comment::doctest!("../README.md");
+#[cfg(feature = "og")]
+pub use og::*;
